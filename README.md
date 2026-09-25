@@ -314,6 +314,49 @@ Automated science & component maps:
 
 <!-- STANDARDS -->
 
+### Regulation & policy
+
+- [EU AI Act (Regulation (EU) 2024/1689)](https://artificialintelligenceact.eu/the-act/) — EU, 2024. Article-by-article explorer; GPAI obligations in Chapter V (Art. 51–56), systemic-risk duties incl. the 10^25 FLOP presumption. Official text: [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2024/1689/oj).
+- [General-Purpose AI Code of Practice](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai) — European Commission AI Office, final version Jul 2025. The Safety & Security chapter's systemic-risk criteria name "capabilities to operate autonomously," "adaptively learn new tasks," and "self-reasoning" — the closest codified regulatory language to evolutionary safety.
+- [NIST AI Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework) — NIST, 2023. Govern / Map / Measure / Manage.
+- [Generative AI Profile (NIST AI 600-1)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) — NIST, 2024.
+- [Managing Misuse Risk for Dual-Use Foundation Models (NIST AI 800-1)](https://www.nist.gov/news-events/news/2025/01/updated-guidelines-managing-misuse-risk-dual-use-foundation-models) — US AI Safety Institute / NIST, 2024–2025.
+- [Center for AI Standards and Innovation (CAISI)](https://www.nist.gov/caisi) — NIST/Commerce, 2025. The US AI Safety Institute, renamed June 2025; pre-deployment model evaluations.
+- [Framework Convention on Artificial Intelligence (CETS No. 225)](https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence) — Council of Europe, 2024. First legally binding international AI treaty.
+- [Hiroshima Process Code of Conduct for Advanced AI Systems](https://digital-strategy.ec.europa.eu/en/library/hiroshima-process-code-conduct-advanced-ai-systems) — G7, 2023.
+- [The Bletchley Declaration](https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023) — UK Government + 28 states + EU, 2023.
+- [Seoul Declaration for safe, innovative and inclusive AI](https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024) — UK & Republic of Korea, 2024.
+- [Statement on Inclusive and Sustainable AI for People and the Planet](https://www.elysee.fr/en/emmanuel-macron/2025/02/11/statement-on-inclusive-and-sustainable-artificial-intelligence-for-people-and-the-planet) — Paris AI Action Summit, 2025.
+- [OECD AI Principles (updated 2024)](https://oecd.ai/en/ai-principles) — OECD.
+- [AI Safety Governance Framework v1.0](https://www.tc260.org.cn/upload/2024-09/1726853378096090906.pdf) — TC260 (China), 2024. Official English edition; v2.0 (2025) and v3.0 (2026, adds AI-agent loss-of-control risk) available via [tc260.org.cn](https://www.tc260.org.cn).
+- [White House Voluntary Commitments from Leading AI Companies](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2023/07/21/fact-sheet-biden-harris-administration-secures-voluntary-commitments-from-leading-artificial-intelligence-companies-to-manage-the-risks-posed-by-ai/) — White House (archived), 2023.
+
+### Standards & management systems
+
+- [ISO/IEC 42001:2023 — AI management systems](https://www.iso.org/standard/81230.html) — First certifiable AI management system standard (AIMS).
+- [ISO/IEC 23894:2023 — Guidance on risk management](https://www.iso.org/standard/77304.html) — AI-specific application of ISO 31000 across the AI lifecycle.
+- [ISO/IEC TR 24028:2020 — Trustworthiness in AI](https://www.iso.org/standard/77604.html) — Transparency, explainability, robustness, reliability.
+- Agentic-AI safety standards: none published yet (ISO/IEC JTC 1/SC 42 work items and an ITU-T SG17 study item are in progress as of 2026); the closest codified thresholds are in the EU GPAI Code of Practice above.
+
+### Lab safety frameworks
+
+- [OpenAI Preparedness Framework](https://openai.com/index/preparedness/) — OpenAI, 2023; [v2 update, Apr 2025](https://openai.com/index/updating-our-preparedness-framework/). Frontier-risk scorecards incl. model autonomy; deployment-safety hub: [deploymentsafety.openai.com](https://deploymentsafety.openai.com). MLE-bench feeds this framework.
+- [Anthropic Responsible Scaling Policy](https://www.anthropic.com/news/anthropics-responsible-scaling-policy) — Anthropic, 2023–2025. ASL framework with capability thresholds incl. autonomous AI R&D; [v2.0 full policy PDF](https://assets.anthropic.com/m/78c4e5bae11a4f33/original/Responsible-Scaling-Policy.pdf).
+- [Frontier Safety Framework](https://deepmind.google/discover/blog/introducing-the-frontier-safety-framework/) — Google DeepMind, 2024. Critical Capability Levels for severe harms incl. autonomous capabilities.
+- [Secure AI Framework (SAIF)](https://saif.google/) — Google, 2023. Security-first control framework.
+- [Frontier AI Safety Commitments](https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024) — 16 frontier labs, AI Seoul Summit 2024; safety-framework updates hosted by the [Frontier Model Forum](https://www.frontiermodelforum.org/).
+
+### Evaluation institutes & frameworks
+
+- [UK AI Security Institute (AISI)](https://www.aisi.gov.uk/) — 2023 (as AI Safety Institute; renamed Feb 2025). Pre-deployment evaluations; [publications](https://www.aisi.gov.uk/publications).
+- [Inspect — AI evaluation framework](https://inspect.aisi.org.uk/) — UK AISI, 2024. Open-source (MIT) eval framework. Code: [UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai).
+- [Safety Cases: A scalable approach to Frontier AI safety](https://www.aisi.gov.uk/research/safety-cases-a-scalable-approach-to-frontier-ai-safety) — UK AISI, 2025. Safety-case templates (AI control, cyber inability); [example misuse safety case](https://www.aisi.gov.uk/research/an-example-safety-case-for-safeguards-against-misuse).
+- [Frontier AI Trends Report](https://www.aisi.gov.uk/frontier-ai-trends-report) — UK AISI, 2025.
+- [METR — Evaluations](https://metr.org/evaluations/) — Independent autonomous-capability measurements (AI R&D time horizon); research at [metr.org/research](https://metr.org/research/).
+- [Model AI Governance Framework for Generative AI](https://aiverifyfoundation.sg/resources/mgf-gen-ai/) — IMDA & AI Verify Foundation (Singapore), 2024. Nine-dimension governance framework.
+- [Centre for the Governance of AI (GovAI)](https://www.governance.ai/) — Research on governance of transformative AI.
+
+
 ## Open Problems
 
 1. **Safety invariants under self-modification** — no verified sufficient condition exists for `∀t: Safety(M_{t+1}) ≥ Safety(M_t) − ε`; alignment-coverage / refusal-direction state variables and recursive-stability proofs are open.

@@ -314,6 +314,49 @@
 
 <!-- STANDARDS -->
 
+### 法规与政策
+
+- [EU AI Act（欧盟人工智能法案，(EU) 2024/1689）](https://artificialintelligenceact.eu/the-act/) — 欧盟，2024。逐条检索版；GPAI 义务见第五章（第 51–56 条），含 10^25 FLOP 系统性风险推定。官方文本：[EUR-Lex](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)。
+- [General-Purpose AI Code of Practice（GPAI 行为准则）](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai) — 欧委会 AI Office，2025 年 7 月终版。安全与安全章节的系统性风险判据明确列出"自主运行能力""自适应学习新任务能力""自我推理能力"——与演化安全最接近的成文监管语言。
+- [NIST AI Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework) — NIST，2023。Govern / Map / Measure / Manage。
+- [Generative AI Profile (NIST AI 600-1)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) — NIST，2024。
+- [Managing Misuse Risk for Dual-Use Foundation Models (NIST AI 800-1)](https://www.nist.gov/news-events/news/2025/01/updated-guidelines-managing-misuse-risk-dual-use-foundation-models) — 美国 AI 安全研究所 / NIST，2024–2025。
+- [Center for AI Standards and Innovation (CAISI)](https://www.nist.gov/caisi) — NIST/商务部，2025。原美国 AI 安全研究所，2025 年 6 月更名；负责部署前模型评估。
+- [Framework Convention on Artificial Intelligence (CETS No. 225)](https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence) — 欧洲委员会，2024。首部有法律约束力的国际 AI 条约。
+- [Hiroshima Process Code of Conduct for Advanced AI Systems](https://digital-strategy.ec.europa.eu/en/library/hiroshima-process-code-conduct-advanced-ai-systems) — G7，2023。
+- [The Bletchley Declaration（布莱切利宣言）](https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023) — 英国政府 + 28 国 + 欧盟，2023。
+- [Seoul Declaration for safe, innovative and inclusive AI（首尔宣言）](https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024) — 英国与韩国，2024。
+- [Statement on Inclusive and Sustainable AI for People and the Planet（巴黎 AI 行动峰会声明）](https://www.elysee.fr/en/emmanuel-macron/2025/02/11/statement-on-inclusive-and-sustainable-artificial-intelligence-for-people-and-the-planet) — 法国总统府，2025。
+- [OECD AI Principles（2024 更新版）](https://oecd.ai/en/ai-principles) — OECD。
+- [AI Safety Governance Framework v1.0（人工智能安全治理框架）](https://www.tc260.org.cn/upload/2024-09/1726853378096090906.pdf) — 中国 TC260，2024。官方英文版；v2.0（2025）与 v3.0（2026，新增 AI 智能体失控风险）见 [tc260.org.cn](https://www.tc260.org.cn)。
+- [白宫领先 AI 公司自愿承诺](https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2023/07/21/fact-sheet-biden-harris-administration-secures-voluntary-commitments-from-leading-artificial-intelligence-companies-to-manage-the-risks-posed-by-ai/) — 白宫（存档），2023。
+
+### 标准与管理体系
+
+- [ISO/IEC 42001:2023 — AI 管理体系](https://www.iso.org/standard/81230.html) — 首个可认证的 AI 管理体系标准（AIMS）。
+- [ISO/IEC 23894:2023 — AI 风险管理指南](https://www.iso.org/standard/77304.html) — ISO 31000 在 AI 生命周期上的具体化。
+- [ISO/IEC TR 24028:2020 — AI 可信性概述](https://www.iso.org/standard/77604.html) — 透明性、可解释性、鲁棒性、可靠性。
+- 智能体 AI 安全标准：尚无正式发布（ISO/IEC JTC 1/SC 42 工作项与 ITU-T SG17 研究项进行中，截至 2026 年）；目前最接近的成文阈值语言见上文欧盟 GPAI 行为准则。
+
+### 实验室安全框架
+
+- [OpenAI Preparedness Framework](https://openai.com/index/preparedness/) — OpenAI，2023；[2025 年 4 月 v2 更新](https://openai.com/index/updating-our-preparedness-framework/)。含模型自主性在内的前沿风险记分卡；部署安全枢纽：[deploymentsafety.openai.com](https://deploymentsafety.openai.com)。MLE-bench 接入该框架。
+- [Anthropic Responsible Scaling Policy（负责任扩展政策）](https://www.anthropic.com/news/anthropics-responsible-scaling-policy) — Anthropic，2023–2025。ASL 分级框架，能力阈值含自主 AI 研发；[v2.0 政策全文 PDF](https://assets.anthropic.com/m/78c4e5bae11a4f33/original/Responsible-Scaling-Policy.pdf)。
+- [Frontier Safety Framework](https://deepmind.google/discover/blog/introducing-the-frontier-safety-framework/) — Google DeepMind，2024。关键能力等级（CCL）与缓解框架，覆盖自主能力。
+- [Secure AI Framework (SAIF)](https://saif.google/) — Google，2023。安全优先的 AI 控制框架。
+- [Frontier AI Safety Commitments（前沿 AI 安全承诺）](https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024) — 16 家前沿实验室，AI 首尔峰会 2024；安全框架更新由 [Frontier Model Forum](https://www.frontiermodelforum.org/) 汇总。
+
+### 评估机构与框架
+
+- [UK AI Security Institute（英国 AI 安全研究所）](https://www.aisi.gov.uk/) — 2023 年成立（原名 AI Safety Institute，2025 年 2 月更名）。前沿模型部署前评估；[出版物列表](https://www.aisi.gov.uk/publications)。
+- [Inspect — AI 评估框架](https://inspect.aisi.org.uk/) — 英国 AISI，2024。开源（MIT）评测框架。代码：[UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai)。
+- [Safety Cases: A scalable approach to Frontier AI safety](https://www.aisi.gov.uk/research/safety-cases-a-scalable-approach-to-frontier-ai-safety) — 英国 AISI，2025。安全论证模板（AI control、网络能力缺失论证）；[滥用防护示例安全论证](https://www.aisi.gov.uk/research/an-example-safety-case-for-safeguards-against-misuse)。
+- [Frontier AI Trends Report](https://www.aisi.gov.uk/frontier-ai-trends-report) — 英国 AISI，2025。
+- [METR — Evaluations](https://metr.org/evaluations/) — 独立测量自主能力里程碑（AI 研发时间视界等）；研究见 [metr.org/research](https://metr.org/research/)。
+- [Model AI Governance Framework for Generative AI（生成式 AI 治理框架）](https://aiverifyfoundation.sg/resources/mgf-gen-ai/) — 新加坡 IMDA 与 AI Verify 基金会，2024。九维治理框架。
+- [Centre for the Governance of AI (GovAI)](https://www.governance.ai/) — 变革性 AI 治理研究机构。
+
+
 ## 开放问题
 
 1. **自修改下的安全不变量** —— 对 `∀t: Safety(M_{t+1}) ≥ Safety(M_t) − ε` 尚无可验证的充分条件；对齐覆盖度/拒绝方向等状态变量与递归稳定性证明是开放方向。
