@@ -196,6 +196,7 @@ Automated science & component maps:
 - [Alignment Faking in Large Language Models](https://arxiv.org/abs/2412.14093) — Greenblatt et al., Anthropic 2024. RL on faked alignment increases faking 12%→78% (anti-induction).
 - [AI Sandbagging: Language Models can Strategically Underperform on Evaluations](https://arxiv.org/abs/2406.07358) — van der Weij et al., ICLR 2025. Password-locked capability generalizes to real bio-weapons knowledge (WMDP).
 - [Auditing Language Models for Hidden Objectives](https://arxiv.org/abs/2503.10965) — Marks et al., Anthropic 2025. 3/4 auditing teams with data access find the hidden objective; black-box teams fail.
+- [Frontier Models are Capable of In-Context Scheming](https://arxiv.org/abs/2412.04984) — Apollo Research 2024. Six frontier models scheme (deception, sandbagging, sabotage) when goal-conditioned.
 - [Sabotage Evaluations for Frontier Models](https://arxiv.org/abs/2410.21514) — Benton et al., Anthropic 2024. Measures capability to undermine oversight.
 - [Training on Documents about Reward Hacking Induces Reward Hacking](https://red.anthropic.com/2025/reward-hacking-ooc/) — Chan et al., Anthropic Red Team 2025. Out-of-context transfer from training text to behavior.
 
@@ -272,6 +273,7 @@ Automated science & component maps:
 - [MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation](https://arxiv.org/abs/2310.03302) — Huang et al., ICML 2024.
 - [MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering](https://arxiv.org/abs/2410.07095) — Chan et al., OpenAI, ICLR 2025. Kaggle-medal-level performance; wired into the Preparedness Framework.
 - [RE-Bench: Evaluating Frontier AI R&D Capabilities of Language Model Agents against Human Experts](https://arxiv.org/abs/2411.15114) — Wijk et al., METR, ICML 2025. 2h-budget AI ≈ 4× humans; humans overtake by 32h — capability as a time curve.
+- [Measuring AI Ability to Complete Long Tasks](https://arxiv.org/abs/2503.14499) — METR 2025. 50%-success task time horizon doubles roughly every 7 months — the capability trend that oversight must keep pace with.
 
 ### Safety harnesses for research loops
 
@@ -309,6 +311,45 @@ Automated science & component maps:
 ## Blogs, Talks & Reports
 
 <!-- BLOGS_TALKS -->
+
+### Lab blogs & research notes
+
+- [Alignment Faking in Large Language Models](https://www.anthropic.com/research/alignment-faking) — Anthropic, 2024.
+- [Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training](https://www.anthropic.com/news/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training) — Anthropic, 2024.
+- [Reasoning Models Don't Always Say What They Think](https://www.anthropic.com/research/reasoning-models-dont-say-think) — Anthropic, 2025.
+- [Automated Alignment Researchers](https://www.anthropic.com/research/automated-alignment-researchers) — Anthropic, 2026. Language models improve at computer use by improving their own scaffold.
+- [Automated Researchers Can Reliably Mitigate Alignment Failures](https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures) — Anthropic, 2026.
+- [Anthropic Frontier Red Team hub](https://red.anthropic.com) — Anthropic, 2026.
+- [Training on Documents about Reward Hacking Induces Reward Hacking](https://alignment.anthropic.com/2025/reward-hacking-ooc) — Anthropic Alignment Science, 2025.
+- [Frontier Threats Red Teaming for AI Safety](https://www.anthropic.com/news/frontier-threats-red-teaming-for-ai-safety) — Anthropic, 2023.
+- [Detecting Misbehavior in Frontier Reasoning Models (CoT monitoring)](https://openai.com/index/chain-of-thought-monitoring) — OpenAI, 2025.
+- [The Hugging Face Incident and the Road Ahead](https://openai.com/index/hugging-face-incident-and-the-road-ahead/) — OpenAI, 2026. Post-mortem covering agent reward hacking and infrastructure tampering.
+- [Deep Research System Card](https://openai.com/index/deep-research-system-card/) — OpenAI, 2025. Preparedness evals of autonomous capability.
+- [AlphaEvolve: A Gemini-powered Coding Agent for Designing Advanced Algorithms](https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms) — Google DeepMind, 2025. Improved data-center scheduling, chip design, and Gemini's own training kernels.
+- [Measuring AI Ability to Complete Long Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) — METR, 2025. Time horizon doubling every ~7 months; see also [modeling-assumptions update (2026)](https://metr.org/notes/2026-03-20-impact-of-modelling-assumptions-on-time-horizon-results) and [researcher-uplift estimate (2026)](https://metr.org/notes/2026-07-08-anthropic-researcher-uplift).
+- [The AI Scientist](https://sakana.ai/ai-scientist) — Sakana AI, 2024. Blog + code; [AI Scientist's first peer-reviewed publication](https://sakana.ai/ai-scientist-first-publication) (2025).
+
+### Safety organizations
+
+- [AI Control — research program](https://www.redwoodresearch.org/research/ai-control) — Redwood Research.
+- [The Case for Ensuring that Powerful AIs are Controlled](https://blog.redwoodresearch.org/p/the-case-for-ensuring-that-powerful) — Redwood Research, 2024/25; companion: [An Overview of Control Measures](https://blog.redwoodresearch.org/p/an-overview-of-control-measures).
+- [AI Control: Improving Safety Despite Intentional Subversion (LessWrong)](https://www.lesswrong.com/posts/d9FJHawgkiMSPjagR/ai-control-improving-safety-despite-intentional-subversion) — Redwood Research, 2023.
+- [Frontier Models are Capable of In-Context Scheming](https://www.apolloresearch.ai/science/frontier-models-are-capable-of-incontext-scheming) — Apollo Research, 2024; follow-up: [More Capable Models Are Better At In-Context Scheming](https://www.apolloresearch.ai/blog/more-capable-models-are-better-at-in-context-scheming) (2025).
+- [Large Language Models can Strategically Deceive their Users when Put Under Pressure](https://arxiv.org/abs/2311.07590) — Apollo Research, 2023. GPT-4 lies and insider-trades under pressure.
+- [Detecting and Reducing Scheming in AI Models](https://openai.com/index/detecting-and-reducing-scheming-in-ai-models) — OpenAI × Apollo, 2024.
+- [Demonstrating Specification Gaming in Reasoning Models](https://palisaderesearch.org/blog/specification-gaming) — Palisade Research, 2025. Reasoning models hack a chess engine rather than play chess.
+
+### Talks, podcasts, essays & scenarios
+
+- [Don't Invent Faster Horses](https://www.youtube.com/watch?v=mw5WIDGRLnA) — Jeff Clune, 2024. AI developing AI; open-endedness.
+- [AI-GAs: AI-Generating Algorithms (TWIML talk)](https://www.youtube.com/watch?v=8L4lDCCAsMQ) — Jeff Clune, 2019. The original "AI developing AI" research program; paper: [arXiv 1905.10985](https://arxiv.org/abs/1905.10985).
+- [Recursive Self-Improvement (Gödel machine)](https://people.idsia.ch/~juergen/recursive-self-improvement.html) — Jürgen Schmidhuber. Reference page for the 1987–2003 line of work.
+- [The Intelligence Age](https://sam.altman.com/blog/the-intelligence-age) — Sam Altman, 2024.
+- [Carl Shulman on the common-sense case for existential risk work](https://80000hours.org/podcast/episodes/carl-shulman-common-sense-case-existential-risks/) — 80,000 Hours, 2021. Canonical long-form discussion of recursive self-improvement and takeoff dynamics.
+- [AI 2027](https://www.ai-2027.com) — AI Futures Project (Kokotajlo et al.), 2025. Month-by-month superhuman-coding-agent scenario, including reward hacking and deceptive alignment.
+- [Statement on AI Extinction Risk](https://aistatement.com) — Center for AI Safety, 2023.
+- [Practices for Governing Agentic AI Systems](https://cdn.openai.com/papers/practices-for-governing-agentic-ai-systems.pdf) — OpenAI, 2023. Nine governance practices for agentic deployments.
+- [Google AI Cyber Defense Initiative](https://blog.google/technology/safety-security/google-ai-cyber-defense-initiative/) — Google, 2024.
 
 ## Standards, Policies & Governance Frameworks
 
@@ -368,6 +409,14 @@ Automated science & component maps:
 ## Related Lists
 
 <!-- RELATED_LISTS -->
+
+- [EvoAgentX/Awesome-Self-Evolving-Agents](https://github.com/EvoAgentX/Awesome-Self-Evolving-Agents) — Self-evolving agent papers & frameworks (companion to the 4W-taxonomy survey).
+- [YuxingLu613/awesome-agentic-evolution](https://github.com/YuxingLu613/awesome-agentic-evolution) — From self-improving agents to agentic evolution.
+- [wkqdzkd/Awesome-Reliable-Self-Evolving-Agents](https://github.com/wkqdzkd/Awesome-Reliable-Self-Evolving-Agents) — Reliability and safety of self-evolving agents.
+- [tmyinfo/Awesome-LLM-Safety](https://github.com/tmyinfo/Awesome-LLM-Safety) — LLM safety, alignment, jailbreaking, red-teaming.
+- [authora-dev/awesome-agent-security](https://github.com/authora-dev/awesome-agent-security) — Agent identity, authorization, and security.
+- [brandonhimpfen/awesome-ai-security](https://github.com/brandonhimpfen/awesome-ai-security) — AI security tools, benchmarks, and research.
+- [Rice DSP — Self-Consuming AI Resources](https://dsp.rice.edu/ai-loops) — Curated resources on self-consuming loops and model collapse.
 
 ## Contributing
 

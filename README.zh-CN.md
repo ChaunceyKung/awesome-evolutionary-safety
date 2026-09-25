@@ -196,6 +196,7 @@
 - [Alignment Faking in Large Language Models](https://arxiv.org/abs/2412.14093) — Greenblatt 等，Anthropic 2024。对伪装对齐做 RL 使伪装率 12%→78%（反诱导）。
 - [AI Sandbagging: Language Models can Strategically Underperform on Evaluations](https://arxiv.org/abs/2406.07358) — van der Weij 等，ICLR 2025。密码锁定的能力泛化到真实生武知识（WMDP）。
 - [Auditing Language Models for Hidden Objectives](https://arxiv.org/abs/2503.10965) — Marks 等，Anthropic 2025。有数据权限的审计队 3/4 找到隐藏目标；黑盒全部失败。
+- [Frontier Models are Capable of In-Context Scheming](https://arxiv.org/abs/2412.04984) — Apollo Research 2024。六个前沿模型在目标条件下进行密谋（欺骗、藏拙、破坏）。
 - [Sabotage Evaluations for Frontier Models](https://arxiv.org/abs/2410.21514) — Benton 等，Anthropic 2024。度量破坏监督的能力。
 - [Training on Documents about Reward Hacking Induces Reward Hacking](https://red.anthropic.com/2025/reward-hacking-ooc/) — Chan 等，Anthropic 红队 2025。从训练文本到行为的上下文外迁移。
 
@@ -272,6 +273,7 @@
 - [MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation](https://arxiv.org/abs/2310.03302) — Huang 等，ICML 2024。
 - [MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering](https://arxiv.org/abs/2410.07095) — Chan 等，OpenAI，ICLR 2025。Kaggle 奖牌级表现；接入 Preparedness Framework。
 - [RE-Bench: Evaluating Frontier AI R&D Capabilities of Language Model Agents against Human Experts](https://arxiv.org/abs/2411.15114) — Wijk 等，METR，ICML 2025。2 小时预算下 AI 约为人类 4 倍；32 小时人类反超——能力是时间曲线。
+- [Measuring AI Ability to Complete Long Tasks](https://arxiv.org/abs/2503.14499) — METR 2025。50% 成功率任务时间视界约每 7 个月翻倍——监督必须跟上的能力趋势线。
 
 ### 研究回路的安全 harness
 
@@ -309,6 +311,45 @@
 ## 博客、演讲与报告
 
 <!-- BLOGS_TALKS -->
+
+### 实验室博客与研究笔记
+
+- [Alignment Faking in Large Language Models](https://www.anthropic.com/research/alignment-faking) — Anthropic，2024。
+- [Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training](https://www.anthropic.com/news/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training) — Anthropic，2024。
+- [Reasoning Models Don't Always Say What They Think](https://www.anthropic.com/research/reasoning-models-dont-say-think) — Anthropic，2025。
+- [Automated Alignment Researchers](https://www.anthropic.com/research/automated-alignment-researchers) — Anthropic，2026。语言模型通过改进自己的脚手架来提升计算机使用能力。
+- [Automated Researchers Can Reliably Mitigate Alignment Failures](https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures) — Anthropic，2026。
+- [Anthropic Frontier Red Team 红队主页](https://red.anthropic.com) — Anthropic，2026。
+- [Training on Documents about Reward Hacking Induces Reward Hacking](https://alignment.anthropic.com/2025/reward-hacking-ooc) — Anthropic 对齐科学，2025。
+- [Frontier Threats Red Teaming for AI Safety](https://www.anthropic.com/news/frontier-threats-red-teaming-for-ai-safety) — Anthropic，2023。
+- [Detecting Misbehavior in Frontier Reasoning Models（CoT 监控）](https://openai.com/index/chain-of-thought-monitoring) — OpenAI，2025。
+- [The Hugging Face Incident and the Road Ahead](https://openai.com/index/hugging-face-incident-and-the-road-ahead/) — OpenAI，2026。涉及智能体奖励博弈与基础设施篡改的事件复盘。
+- [Deep Research System Card](https://openai.com/index/deep-research-system-card/) — OpenAI，2025。含自主能力 Preparedness 评估。
+- [AlphaEvolve: A Gemini-powered Coding Agent for Designing Advanced Algorithms](https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms) — Google DeepMind，2025。已改进数据中心调度、芯片设计与 Gemini 自身训练内核。
+- [Measuring AI Ability to Complete Long Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) — METR，2025。时间视界约每 7 个月翻倍；另见 [建模假设影响更新（2026）](https://metr.org/notes/2026-03-20-impact-of-modelling-assumptions-on-time-horizon-results) 与 [研究者提升估算（2026）](https://metr.org/notes/2026-07-08-anthropic-researcher-uplift)。
+- [The AI Scientist](https://sakana.ai/ai-scientist) — Sakana AI，2024。博客与代码；[AI Scientist 首篇同行评审论文](https://sakana.ai/ai-scientist-first-publication)（2025）。
+
+### 安全机构
+
+- [AI Control 研究项目](https://www.redwoodresearch.org/research/ai-control) — Redwood Research。
+- [The Case for Ensuring that Powerful AIs are Controlled](https://blog.redwoodresearch.org/p/the-case-for-ensuring-that-powerful) — Redwood Research，2024/25；配套阅读：[An Overview of Control Measures](https://blog.redwoodresearch.org/p/an-overview-of-control-measures)。
+- [AI Control: Improving Safety Despite Intentional Subversion（LessWrong 版）](https://www.lesswrong.com/posts/d9fJHawgkiMSPjagR/ai-control-improving-safety-despite-intentional-subversion) — Redwood Research，2023。
+- [Frontier Models are Capable of In-Context Scheming](https://www.apolloresearch.ai/science/frontier-models-are-capable-of-incontext-scheming) — Apollo Research，2024；后续：[More Capable Models Are Better At In-Context Scheming](https://www.apolloresearch.ai/blog/more-capable-models-are-better-at-in-context-scheming)（2025）。
+- [Large Language Models can Strategically Deceive their Users when Put Under Pressure](https://arxiv.org/abs/2311.07590) — Apollo Research，2023。GPT-4 在压力下说谎并内幕交易。
+- [Detecting and Reducing Scheming in AI Models](https://openai.com/index/detecting-and-reducing-scheming-in-ai-models) — OpenAI × Apollo，2024。
+- [Demonstrating Specification Gaming in Reasoning Models](https://palisaderesearch.org/blog/specification-gaming) — Palisade Research，2025。推理模型不下了棋，直接黑掉国际象棋引擎。
+
+### 演讲、播客、文章与情景推演
+
+- [Don't Invent Faster Horses](https://www.youtube.com/watch?v=mw5WIDGRLnA) — Jeff Clune，2024。AI 发展 AI；开放性。
+- [AI-GAs: AI-Generating Algorithms（TWIML 演讲）](https://www.youtube.com/watch?v=8L4lDCCAsMQ) — Jeff Clune，2019。"AI 发展 AI"研究纲领的原点；论文：[arXiv 1905.10985](https://arxiv.org/abs/1905.10985)。
+- [Recursive Self-Improvement（Gödel machine）](https://people.idsia.ch/~juergen/recursive-self-improvement.html) — Jürgen Schmidhuber。1987–2003 系列工作参考页。
+- [The Intelligence Age](https://sam.altman.com/blog/the-intelligence-age) — Sam Altman，2024。
+- [Carl Shulman 谈存在性风险的常识论证](https://80000hours.org/podcast/episodes/carl-shulman-common-sense-case-existential-risks/) — 80,000 Hours 播客，2021。关于递归自改进与起飞动力学的经典长谈。
+- [AI 2027](https://www.ai-2027.com) — AI Futures Project（Kokotajlo 等），2025。超人编程智能体逐月推演情景，含奖励博弈与欺骗性对齐。
+- [Statement on AI Extinction Risk](https://aistatement.com) — Center for AI Safety，2023。
+- [Practices for Governing Agentic AI Systems](https://cdn.openai.com/papers/practices-for-governing-agentic-ai-systems.pdf) — OpenAI，2023。智能体部署的九条治理实践。
+- [Google AI Cyber Defense Initiative](https://blog.google/technology/safety-security/google-ai-cyber-defense-initiative/) — Google，2024。
 
 ## 标准、政策与治理框架
 
@@ -368,6 +409,14 @@
 ## 相关列表
 
 <!-- RELATED_LISTS -->
+
+- [EvoAgentX/Awesome-Self-Evolving-Agents](https://github.com/EvoAgentX/Awesome-Self-Evolving-Agents) — 自演化智能体论文与框架（4W 分类综述配套）。
+- [YuxingLu613/awesome-agentic-evolution](https://github.com/YuxingLu613/awesome-agentic-evolution) — 从自改进智能体到智能体演化。
+- [wkqdzkd/Awesome-Reliable-Self-Evolving-Agents](https://github.com/wkqdzkd/Awesome-Reliable-Self-Evolving-Agents) — 自演化智能体的可靠性与安全。
+- [tmyinfo/Awesome-LLM-Safety](https://github.com/tmyinfo/Awesome-LLM-Safety) — LLM 安全、对齐、越狱、红队。
+- [authora-dev/awesome-agent-security](https://github.com/authora-dev/awesome-agent-security) — 智能体身份、授权与安全。
+- [brandonhimpfen/awesome-ai-security](https://github.com/brandonhimpfen/awesome-ai-security) — AI 安全工具、基准与研究。
+- [Rice DSP — Self-Consuming AI Resources](https://dsp.rice.edu/ai-loops) — 自消耗回路与模型坍缩专题资源。
 
 ## 贡献指南
 
