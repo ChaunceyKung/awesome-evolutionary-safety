@@ -6,7 +6,7 @@
 
 **收录内容** —— 论文、评测集与数据集、代码仓库、博客与演讲、标准与政策框架。
 
-**配套综述** —— 本列表配套论文《Evolutionary Safety of Self-Improving AI: An Overview of Risks, Control, and Recursive Development》（面向 ACM Computing Surveys）。
+**配套综述** —— 本列表配套论文《Evolutionary Safety of Recursive Self-Improving AI: Taxonomy, Risk Discovery, and Evaluation》（Gong 等，中国科学院计算技术研究所）。项目材料：[ChaunceyKung/YUVANE-alpha](https://github.com/ChaunceyKung/YUVANE-alpha)。
 
 ## 目录
 
@@ -502,10 +502,11 @@
 配套综述（本列表的文献基础）：
 
 ```bibtex
-@article{evolutionarysafety2026,
-  title  = {Evolutionary Safety of Self-Improving AI: An Overview of Risks, Control, and Recursive Development},
-  note   = {In preparation, ACM Computing Surveys},
-  year   = {2026}
+@misc{gong2026evolutionary,
+  title        = {Evolutionary Safety of Recursive Self-Improving AI: Taxonomy, Risk Discovery, and Evaluation},
+  author       = {Gong, Chang and Bi, Jingping and Yao, Di and Liang, Xinjian and Xiang, Chao and Guo, Ruijie},
+  howpublished = {Institute of Computing Technology, Chinese Academy of Sciences, preprint},
+  year         = {2026}
 }
 ```
 

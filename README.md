@@ -6,7 +6,7 @@ A curated list of resources on the **evolutionary safety** of self-improving AI 
 
 **Scope** — papers, benchmarks & datasets, code repositories, blogs & talks, and standards / policy frameworks.
 
-**Companion survey** — this list accompanies *Evolutionary Safety of Self-Improving AI: An Overview of Risks, Control, and Recursive Development* (prepared for ACM Computing Surveys).
+**Companion survey** — this list accompanies *Evolutionary Safety of Recursive Self-Improving AI: Taxonomy, Risk Discovery, and Evaluation* (Gong et al., Institute of Computing Technology, Chinese Academy of Sciences). Project materials: [ChaunceyKung/YUVANE-alpha](https://github.com/ChaunceyKung/YUVANE-alpha).
 
 ## Contents
 
@@ -502,10 +502,11 @@ Issues and pull requests are welcome: new entries (papers, benchmarks, code, blo
 Companion survey (bibliography for this list):
 
 ```bibtex
-@article{evolutionarysafety2026,
-  title  = {Evolutionary Safety of Self-Improving AI: An Overview of Risks, Control, and Recursive Development},
-  note   = {In preparation, ACM Computing Surveys},
-  year   = {2026}
+@misc{gong2026evolutionary,
+  title        = {Evolutionary Safety of Recursive Self-Improving AI: Taxonomy, Risk Discovery, and Evaluation},
+  author       = {Gong, Chang and Bi, Jingping and Yao, Di and Liang, Xinjian and Xiang, Chao and Guo, Ruijie},
+  howpublished = {Institute of Computing Technology, Chinese Academy of Sciences, preprint},
+  year         = {2026}
 }
 ```
 
