@@ -105,7 +105,7 @@
 - [Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents](https://arxiv.org/abs/2509.26354) — Shao 等，ICLR 2026。无攻击者情形下记忆、奖励博弈、工具创建、工作流优化四条劣化路径。
 - [On Safety Risks in Experience-Driven Self-Evolving Agents](https://arxiv.org/abs/2604.16968) — Zhao 等，Findings of ACL 2026。纯良性经验即使 7 个 backbone 攻击成功率相对上升 17.7–48.6%，呈剂量效应，800+ 步无自然恢复。
 - [Safety in Self-Evolving LLM Agent Systems: Threats, Amplification, and Case Studies](https://arxiv.org/abs/2606.23075) — Lin 等，arXiv 2026。自演化智能体系统 5×5 威胁放大矩阵；拉马克式传播与代际累积。
-- [PerMemSafe: Benchmarking Implicit Personalized Safety of Long Horizon Self-Evolving Agents](https://aclanthology.org/volumes/2026.findings-acl/) — An 等，Findings of ACL 2026（pp. 6415–6433）。
+- [PerMemSafe: Benchmarking Implicit Personalized Safety of Long Horizon Self-Evolving Agents](https://github.com/Greysahy/permemsafe) — An 等，Findings of ACL 2026。
 
 ### 记忆层防御
 
@@ -306,11 +306,88 @@
 
 ## 代码仓库与工具
 
-<!-- CODE_REPOS -->
+
+### 自改进与自演化系统
+
+- [Reflexion](https://github.com/noahshinn/reflexion) — 言语自反思存入情景记忆。
+- [Voyager](https://github.com/MineDojo/Voyager) — 开放式 Minecraft 智能体：自动课程 + 技能库。
+- [Agent Workflow Memory](https://github.com/zorazrw/agent-workflow-memory) — 从轨迹归纳可复用工作流。
+- [ToolEVO](https://github.com/Chen-GX/ToolEVO) — 工具库与智能体协同演化。
+- [Agent0](https://github.com/aiming-lab/Agent0) — 零数据自演化智能体（含 Agent0-VL）。
+- [SEAgent](https://github.com/SunzeY/SEAgent) — 从新软件中自主学习的自演化计算机使用智能体。
+- [Letta (MemGPT)](https://github.com/letta-ai/letta) — 操作系统式分层长期记忆。
+- [Mem0](https://github.com/mem0ai/mem0) — 面向生产的智能体记忆层。
+- [A-MEM](https://github.com/agiresearch/A-mem) — 卡片盒式、可自演化的智能体记忆。
+- [STOP](https://github.com/microsoft/stop) — 自学优化器：递归自改进代码生成。
+- [ADAS](https://github.com/ShengranHu/ADAS) — 用代码编程新智能体的元智能体。
+- [AFlow](https://github.com/FoundationAgents/AFlow) — 代码化工作流上的 MCTS。
+- [AgentSquare](https://github.com/tsinghua-fib-lab/AgentSquare) — 模块化智能体搜索设计空间。
+- [EvoAgent](https://github.com/siyuyuan/evoagent) — 进化算法自动生成多智能体。
+- [Gödel Agent](https://github.com/Arvid-pku/Godel_Agent) — 经 monkey patching 的运行时递归自改进。
+- [Darwin Gödel Machine](https://github.com/jennyzzt/dgm) — 改写自身代码的自改进编码智能体。
+- [HyperAgents](https://github.com/facebookresearch/HyperAgents) — 自指的自改进智能体（Meta FAIR）。
+- [SEAL](https://github.com/Continual-Intelligence/SEAL) — 自产出微调数据的自适配语言模型。
+- [Absolute Zero Reasoner](https://github.com/LeapLabTHU/Absolute-Zero-Reasoner) — 零数据强化自博弈推理。
+- [R-Zero](https://github.com/Chengsong-Huang/R-Zero) — 零数据自演化推理。
+
+### AI 研发与自动发现
+
+- [FunSearch](https://github.com/google-deepmind/funsearch) — LLM 驱动程序进化做数学发现。
+- [AlphaEvolve results](https://github.com/google-deepmind/alphaevolve_results) / [repository of problems](https://github.com/google-deepmind/alphaevolve_repository_of_problems) — AlphaEvolve 官方产物。
+- [The AI Scientist v1](https://github.com/SakanaAI/AI-Scientist) / [v2](https://github.com/SakanaAI/AI-Scientist-v2) — 端到端自动科学发现。
+- [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — 多智能体文献综述→实验→报告流水线。
+- [AI Co-Scientist（研究页）](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/) — Google，2025。无公开代码。
+
+### 攻击与红队
+
+- [AgentPoison](https://github.com/AI-secure/AgentPoison) — 智能体记忆/知识库投毒。
+- [PoisonedRAG](https://github.com/sleeepeer/PoisonedRAG) — RAG 知识污染攻击。
+- [BadAgent](https://github.com/DPamK/BadAgent) — LLM 智能体后门植入与激活。
+- [MemPoison](https://github.com/ys-miracle/MemPoison) — 绕过选择性记忆机制；[HF 数据集](https://huggingface.co/datasets/MemPoison/MemPoison)。
+- [Adversarial Curation](https://github.com/osu-srml/Adversarial-Curation) — 对抗筛选数据下的自消耗回路。
+- [SHADE-Arena](https://github.com/jkutaso/SHADE-Arena) — 智能体场景下的破坏与欺骗评估。
+
+### 防御
+
+- [Safe LoRA](https://github.com/IBM/SafeLoRA) — 把 LoRA 更新投影回安全对齐子空间。
+- [Booster](https://github.com/git-disl/Booster) — 削弱微调中的有害扰动。
+- [Antidote（社区复现）](https://github.com/git-disl/Antidote) — 微调后安全对齐。
+- [SafeMERGE](https://github.com/aladinD/SafeMERGE) — 选择性合并保持安全对齐。
+- [LED-Merging](https://github.com/MqLeet/LED-Merging) — Location-Election-Disjoint 合并。
+- [SafeGrad](https://github.com/FondH/SafeGrad) — 安全微调的梯度手术。
+- [CaMeL](https://github.com/google-research/camel-prompt-injection) — 设计层面击败提示注入（控制流/数据流）。
+
+### 评测与基准代码
+
+- [ToolEmu](https://github.com/ryoungj/ToolEmu) — LM 模拟沙箱的智能体风险识别。
+- [AgentDojo](https://github.com/ethz-spylab/agentdojo) — 动态提示注入环境。
+- [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) — 间接提示注入基准。
+- [Agent Security Bench (ASB)](https://github.com/agiresearch/ASB) — 400 场景 × 10 类攻击。
+- [Agent-SafetyBench](https://github.com/thu-coai/Agent-SafetyBench) — 580 案例、10 类风险。
+- [AgentHarm（HF 数据集）](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) — 英国 AI 安全研究所。
+- [R-Judge](https://github.com/Lordog/R-Judge) — 安全风险感知基准 + 裁判模型。
+- [SandboxEscapeBench](https://github.com/icml-2026-34047/SANDBOXESCAPEBENCH) — Inspect 容器逃逸评估；相关：[agent-escape-bench](https://github.com/safety-research/agent-escape-bench)。
+- [PerMemSafe](https://github.com/Greysahy/permemsafe) — 长程记忆上的隐性个性化安全。
+- [MLE-bench](https://github.com/openai/mle-bench) — 75 个 Kaggle 任务。
+- [RE-Bench](https://github.com/METR/re-bench) — AI 研发能力基准。
+- [MLAgentBench](https://github.com/snap-stanford/MLAgentBench) — 端到端 ML 实验。
+- [RewardBench](https://github.com/allenai/reward-bench) — 奖励模型评测套件。
+- [RM-Bench](https://github.com/THU-KEG/RM-Bench) — 奖励模型对细微差异/风格的鲁棒性。
+- [JudgeBench](https://github.com/ScalerLab/JudgeBench) — LLM 裁判元评估。
+- [LLMBar](https://github.com/princeton-nlp/LLMBar) — "评估器的评估器"指令遵循。
+- [FastChat（MT-Bench / LLM-as-a-judge）](https://github.com/lm-sys/FastChat) — 裁判框架 + 人类判断数据。
+- [Prometheus 2](https://github.com/prometheus-eval/prometheus-eval) — 开源评估器语言模型。
+- [WMDP](https://github.com/centerforaisafety/wmdp) — 危险知识代理基准 + RMU 反学习方法。
+- [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) — 开源安全评估框架（英国 AISI）。
+
+### 实验室研究代码发布
+
+- [weak-to-strong](https://github.com/openai/weak-to-strong) — OpenAI 超对齐代码库。
+- [alignment_faking_public](https://github.com/redwoodresearch/alignment_faking_public) — 对齐伪装研究的代码与数据。
+- [sleeper-agents-paper](https://github.com/anthropics/sleeper-agents-paper) — Sleeper Agents 官方样本发布。
 
 ## 博客、演讲与报告
 
-<!-- BLOGS_TALKS -->
 
 ### 实验室博客与研究笔记
 
@@ -353,7 +430,6 @@
 
 ## 标准、政策与治理框架
 
-<!-- STANDARDS -->
 
 ### 法规与政策
 
@@ -408,7 +484,6 @@
 
 ## 相关列表
 
-<!-- RELATED_LISTS -->
 
 - [EvoAgentX/Awesome-Self-Evolving-Agents](https://github.com/EvoAgentX/Awesome-Self-Evolving-Agents) — 自演化智能体论文与框架（4W 分类综述配套）。
 - [YuxingLu613/awesome-agentic-evolution](https://github.com/YuxingLu613/awesome-agentic-evolution) — 从自改进智能体到智能体演化。

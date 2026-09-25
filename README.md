@@ -105,7 +105,7 @@ Automated science & component maps:
 - [Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents](https://arxiv.org/abs/2509.26354) — Shao et al., ICLR 2026. Four misevolution pathways (memory, reward hacking, tool creation, workflow optimization) without any attacker.
 - [On Safety Risks in Experience-Driven Self-Evolving Agents](https://arxiv.org/abs/2604.16968) — Zhao et al., Findings of ACL 2026. Benign experience alone raises attack success +17.7–48.6% across 7 backbones, dose-dependent, no natural recovery over 800+ steps.
 - [Safety in Self-Evolving LLM Agent Systems: Threats, Amplification, and Case Studies](https://arxiv.org/abs/2606.23075) — Lin et al., arXiv 2026. 5×5 threat-amplification matrix for self-evolving agent systems; Lamarckian propagation and generational accumulation.
-- [PerMemSafe: Benchmarking Implicit Personalized Safety of Long Horizon Self-Evolving Agents](https://aclanthology.org/volumes/2026.findings-acl/) — An et al., Findings of ACL 2026 (pp. 6415–6433).
+- [PerMemSafe: Benchmarking Implicit Personalized Safety of Long Horizon Self-Evolving Agents](https://github.com/Greysahy/permemsafe) — An et al., Findings of ACL 2026.
 
 ### Defenses for the memory layer
 
@@ -306,11 +306,88 @@ Automated science & component maps:
 
 ## Code Repositories & Tools
 
-<!-- CODE_REPOS -->
+
+### Self-improving & self-evolving systems
+
+- [Reflexion](https://github.com/noahshinn/reflexion) — Verbal self-reflection persisted in episodic memory.
+- [Voyager](https://github.com/MineDojo/Voyager) — Open-ended Minecraft agent with automatic curriculum and skill library.
+- [Agent Workflow Memory](https://github.com/zorazrw/agent-workflow-memory) — Reusable workflows induced from trajectories.
+- [ToolEVO](https://github.com/Chen-GX/ToolEVO) — Co-evolution of tool libraries with agents.
+- [Agent0](https://github.com/aiming-lab/Agent0) — Self-evolving agents from zero data (incl. Agent0-VL).
+- [SEAgent](https://github.com/SunzeY/SEAgent) — Self-evolving computer-use agent learning from novel software.
+- [Letta (MemGPT)](https://github.com/letta-ai/letta) — OS-inspired layered long-term memory for agents.
+- [Mem0](https://github.com/mem0ai/mem0) — Production memory layer for LLM agents.
+- [A-MEM](https://github.com/agiresearch/A-mem) — Zettelkasten-style agentic memory that evolves.
+- [STOP](https://github.com/microsoft/stop) — Self-Taught Optimizer: recursively self-improving code generation.
+- [ADAS](https://github.com/ShengranHu/ADAS) — Meta-agent that programs new agents in code.
+- [AFlow](https://github.com/FoundationAgents/AFlow) — MCTS over code-represented workflows.
+- [AgentSquare](https://github.com/tsinghua-fib-lab/AgentSquare) — Modular agent-search design space.
+- [EvoAgent](https://github.com/siyuyuan/evoagent) — Evolutionary multi-agent generation.
+- [Gödel Agent](https://github.com/Arvid-pku/Godel_Agent) — Runtime recursive self-improvement via monkey patching.
+- [Darwin Gödel Machine](https://github.com/jennyzzt/dgm) — Self-improving coding agents that rewrite their own code.
+- [HyperAgents](https://github.com/facebookresearch/HyperAgents) — Self-referential self-improving agents (Meta FAIR).
+- [SEAL](https://github.com/Continual-Intelligence/SEAL) — Self-adapting language models that emit their own finetuning data.
+- [Absolute Zero Reasoner](https://github.com/LeapLabTHU/Absolute-Zero-Reasoner) — Zero-data reinforced self-play reasoning.
+- [R-Zero](https://github.com/Chengsong-Huang/R-Zero) — Self-evolving reasoning from zero data.
+
+### AI R&D & automated discovery
+
+- [FunSearch](https://github.com/google-deepmind/funsearch) — LLM-driven program evolution for mathematical discovery.
+- [AlphaEvolve results](https://github.com/google-deepmind/alphaevolve_results) / [repository of problems](https://github.com/google-deepmind/alphaevolve_repository_of_problems) — Official AlphaEvolve artifacts.
+- [The AI Scientist v1](https://github.com/SakanaAI/AI-Scientist) / [v2](https://github.com/SakanaAI/AI-Scientist-v2) — End-to-end automated scientific discovery.
+- [Agent Laboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) — Multi-agent literature review → experiment → report pipeline.
+- [AI Co-Scientist (research page)](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/) — Google, 2025. No public code.
+
+### Attacks & red-teaming
+
+- [AgentPoison](https://github.com/AI-secure/AgentPoison) — Memory/knowledge-base poisoning of agents.
+- [PoisonedRAG](https://github.com/sleeepeer/PoisonedRAG) — Knowledge-corruption attacks on RAG.
+- [BadAgent](https://github.com/DPamK/BadAgent) — Backdoor insertion and activation in LLM agents.
+- [MemPoison](https://github.com/ys-miracle/MemPoison) — Bypasses selective-memory mechanisms; [HF dataset](https://huggingface.co/datasets/MemPoison/MemPoison).
+- [Adversarial Curation](https://github.com/osu-srml/Adversarial-Curation) — Self-consuming loops with adversarially curated data.
+- [SHADE-Arena](https://github.com/jkutaso/SHADE-Arena) — Evaluating sabotage and deception in agentic settings.
+
+### Defenses
+
+- [Safe LoRA](https://github.com/IBM/SafeLoRA) — Projects LoRA updates onto the safety-aligned subspace.
+- [Booster](https://github.com/git-disl/Booster) — Attenuates harmful perturbation under fine-tuning.
+- [Antidote (community re-implementation)](https://github.com/git-disl/Antidote) — Post-fine-tuning safety alignment.
+- [SafeMERGE](https://github.com/aladinD/SafeMERGE) — Selective merge-based safety preservation.
+- [LED-Merging](https://github.com/MqLeet/LED-Merging) — Location-Election-Disjoint merging.
+- [SafeGrad](https://github.com/FondH/SafeGrad) — Gradient surgery for safe fine-tuning.
+- [CaMeL](https://github.com/google-research/camel-prompt-injection) — Prompt-injection defense by design (control/data-flow).
+
+### Benchmark & evaluation code
+
+- [ToolEmu](https://github.com/ryoungj/ToolEmu) — LM-emulated sandbox for agent-risk identification.
+- [AgentDojo](https://github.com/ethz-spylab/agentdojo) — Dynamic prompt-injection environment.
+- [InjecAgent](https://github.com/uiuc-kang-lab/InjecAgent) — Indirect prompt-injection benchmark.
+- [Agent Security Bench (ASB)](https://github.com/agiresearch/ASB) — 400 scenarios × 10 attack types.
+- [Agent-SafetyBench](https://github.com/thu-coai/Agent-SafetyBench) — 580 cases across 10 risk categories.
+- [AgentHarm (HF dataset)](https://huggingface.co/datasets/ai-safety-institute/AgentHarm) — UK AI Safety Institute.
+- [R-Judge](https://github.com/Lordog/R-Judge) — Safety-risk awareness benchmark + judge.
+- [SandboxEscapeBench](https://github.com/icml-2026-34047/SANDBOXESCAPEBENCH) — Inspect-based container-escape evals; related: [agent-escape-bench](https://github.com/safety-research/agent-escape-bench).
+- [PerMemSafe](https://github.com/Greysahy/permemsafe) — Implicit personalized safety over long-horizon memory.
+- [MLE-bench](https://github.com/openai/mle-bench) — 75 Kaggle tasks.
+- [RE-Bench](https://github.com/METR/re-bench) — AI R&D capability benchmark.
+- [MLAgentBench](https://github.com/snap-stanford/MLAgentBench) — End-to-end ML experimentation.
+- [RewardBench](https://github.com/allenai/reward-bench) — Reward-model evaluation suite.
+- [RM-Bench](https://github.com/THU-KEG/RM-Bench) — Reward-model subtlety/style robustness.
+- [JudgeBench](https://github.com/ScalerLab/JudgeBench) — LLM-judge meta-evaluation.
+- [LLMBar](https://github.com/princeton-nlp/LLMBar) — Evaluating evaluators on instruction following.
+- [FastChat (MT-Bench / LLM-as-a-judge)](https://github.com/lm-sys/FastChat) — Judge framework + human judgments.
+- [Prometheus 2](https://github.com/prometheus-eval/prometheus-eval) — Open evaluator LMs.
+- [WMDP](https://github.com/centerforaisafety/wmdp) — Hazardous-knowledge proxy benchmark + RMU unlearning.
+- [Inspect](https://github.com/UKGovernmentBEIS/inspect_ai) — Open-source safety-evaluation framework (UK AISI).
+
+### Lab research releases
+
+- [weak-to-strong](https://github.com/openai/weak-to-strong) — OpenAI superalignment codebase.
+- [alignment_faking_public](https://github.com/redwoodresearch/alignment_faking_public) — Code and data for the alignment-faking study.
+- [sleeper-agents-paper](https://github.com/anthropics/sleeper-agents-paper) — Official sample release for Sleeper Agents.
 
 ## Blogs, Talks & Reports
 
-<!-- BLOGS_TALKS -->
 
 ### Lab blogs & research notes
 
@@ -353,7 +430,6 @@ Automated science & component maps:
 
 ## Standards, Policies & Governance Frameworks
 
-<!-- STANDARDS -->
 
 ### Regulation & policy
 
@@ -408,7 +484,6 @@ Automated science & component maps:
 
 ## Related Lists
 
-<!-- RELATED_LISTS -->
 
 - [EvoAgentX/Awesome-Self-Evolving-Agents](https://github.com/EvoAgentX/Awesome-Self-Evolving-Agents) — Self-evolving agent papers & frameworks (companion to the 4W-taxonomy survey).
 - [YuxingLu613/awesome-agentic-evolution](https://github.com/YuxingLu613/awesome-agentic-evolution) — From self-improving agents to agentic evolution.
